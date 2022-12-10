@@ -9,7 +9,6 @@
 #define AbelianGroup_h
 
 #include "Set.h"
-#include <memory>
 
 class AbelianGroup : public Set{
 public:
