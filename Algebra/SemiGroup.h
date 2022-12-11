@@ -11,7 +11,7 @@
 
 class SemiGroup : public Set{
 public:
-    virtual const Semigroup operator*(const SemiGroup&) = 0;
+    virtual SemiGroup& operator*(const SemiGroup&) = 0;
 };
 
 #endif /* SemiGroup_h */

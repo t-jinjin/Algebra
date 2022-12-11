@@ -12,8 +12,8 @@
 
 class Group : public Monoid{
 public:
-    virtual const inv() const = 0;
-    virtual operator/(const Group&) = 0;
+    virtual const Group& inv() const = 0;
+    virtual Group& operator/(const Group&) = 0;
 };
 
 #endif /* Group_h */
