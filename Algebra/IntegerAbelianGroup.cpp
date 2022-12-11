@@ -18,11 +18,11 @@ public:
     }
     
     bool operator==(const Set& rhs) const override{
-        const IntegerAbelianGroup rhs_cast = static_cast<const IntegerAbelianGroup&>(rhs);
+        const IntegerAbelianGroup& rhs_cast = static_cast<const IntegerAbelianGroup&>(rhs);
         return value_ == rhs_cast.value_;
     }
     bool operator!=(const Set& rhs) const override{
-        const IntegerAbelianGroup rhs_cast = static_cast<const IntegerAbelianGroup&>(rhs);
+        const IntegerAbelianGroup& rhs_cast = static_cast<const IntegerAbelianGroup&>(rhs);
         return !(*this == rhs_cast);
     }
     IntegerAbelianGroup &operator=(const Set& rhs) override{
@@ -43,8 +43,9 @@ public:
     
     IntegerAbelianGroup& operator-(const AbelianGroup& rhs) override{
         const IntegerAbelianGroup& rhs_cast = static_cast<const IntegerAbelianGroup&>(rhs);
-        int res = value_ - rhs_cast.value_;
-        return *new IntegerAbelianGroup(res);
+        return *this + (-rhs_cast);
+        //int res = value_ - rhs_cast.value_;
+        //return *new IntegerAbelianGroup(res);
     }
     
     IntegerAbelianGroup& zero() const override{

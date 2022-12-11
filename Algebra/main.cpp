@@ -21,6 +21,7 @@ void test_IntegerAbelianGroup(){
     cout << "a - a = " << a - a << endl;
     cout << "a + b = " << a + b << endl;
     cout << "a + (-b)=" << a + (-b) << endl;
+    cout << "a - b=" << a - b << endl;
 }
 
 
