@@ -10,6 +10,8 @@
 		7831A3E4294397BB00D3D7E9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7831A3E3294397BB00D3D7E9 /* main.cpp */; };
 		7831A3F82944EA1400D3D7E9 /* Integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7831A3F62944EA1400D3D7E9 /* Integer.cpp */; };
 		7831A3FF29455A5900D3D7E9 /* IntegerAbelianGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.cpp */; };
+		7831A40229456C3C00D3D7E9 /* SymmetricGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7831A40129456C3C00D3D7E9 /* SymmetricGroup.cpp */; };
+		7831A4042945718400D3D7E9 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7831A4032945718400D3D7E9 /* test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,9 @@
 		7831A3FC2945579C00D3D7E9 /* SemiGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemiGroup.h; sourceTree = "<group>"; };
 		7831A3FD294557E900D3D7E9 /* Monoid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monoid.h; sourceTree = "<group>"; };
 		7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IntegerAbelianGroup.cpp; sourceTree = "<group>"; };
+		7831A40029456B6700D3D7E9 /* Group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		7831A40129456C3C00D3D7E9 /* SymmetricGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SymmetricGroup.cpp; sourceTree = "<group>"; };
+		7831A4032945718400D3D7E9 /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +82,11 @@
 				7831A3F52944E9E100D3D7E9 /* AbelianGroup.h */,
 				7831A3FC2945579C00D3D7E9 /* SemiGroup.h */,
 				7831A3FD294557E900D3D7E9 /* Monoid.h */,
+				7831A40029456B6700D3D7E9 /* Group.h */,
+				7831A40129456C3C00D3D7E9 /* SymmetricGroup.cpp */,
 				7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.cpp */,
 				7831A3F62944EA1400D3D7E9 /* Integer.cpp */,
+				7831A4032945718400D3D7E9 /* test.cpp */,
 				7831A3E3294397BB00D3D7E9 /* main.cpp */,
 			);
 			path = Algebra;
@@ -142,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7831A3F82944EA1400D3D7E9 /* Integer.cpp in Sources */,
+				7831A40229456C3C00D3D7E9 /* SymmetricGroup.cpp in Sources */,
 				7831A3E4294397BB00D3D7E9 /* main.cpp in Sources */,
+				7831A4042945718400D3D7E9 /* test.cpp in Sources */,
 				7831A3FF29455A5900D3D7E9 /* IntegerAbelianGroup.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

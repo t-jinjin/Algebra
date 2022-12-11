@@ -7,8 +7,11 @@
 
 #ifndef Monoid_h
 #define Monoid_h
+#include "SemiGroup.h"
 
-
-
+class Monoid : public SemiGroup{
+public:
+    virtual const Monoid& one() const = 0;
+};
 
 #endif /* Monoid_h */
