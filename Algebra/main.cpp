@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include "IntegerAbelianGroup.cpp"
+#include "SymmetricGroup.cpp"
 //#include "IntegerAbelianGroup.cpp"
 using namespace std;
 
@@ -24,9 +25,26 @@ void test_IntegerAbelianGroup(){
     cout << "a - b=" << a - b << endl;
 }
 
+void test_SymmetricGroup(){
+    try{
+        SymmetricGroup<4> a({1,3,0,2});
+        SymmetricGroup<4> b({0,3,1,2});
+        cout << "a = " << a << endl;
+        cout << "a^-1 = " << a.inv() << endl;
+        cout << "a * a^-1 " << a * a.inv() << endl;
+        cout << "b = " << b << endl;
+        cout << "b^-1 = " << b.inv() << endl;
+        cout << "b^-1 * b " << b * b.inv() << endl;
+        
+        
+    }catch(std::runtime_error err){
+        std::cerr << err.what() << std::endl;
+    }
+}
 
 
 int main(){
-    test_IntegerAbelianGroup();
+    //test_IntegerAbelianGroup();
+    test_SymmetricGroup();
     return 0;
 }
