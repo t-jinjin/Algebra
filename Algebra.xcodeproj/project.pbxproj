@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7831A3E4294397BB00D3D7E9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7831A3E3294397BB00D3D7E9 /* main.cpp */; };
 		7831A3F82944EA1400D3D7E9 /* Integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7831A3F62944EA1400D3D7E9 /* Integer.cpp */; };
+		7831A3FF29455A5900D3D7E9 /* IntegerAbelianGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,9 @@
 		7831A3F92945536C00D3D7E9 /* OrderedSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderedSet.h; sourceTree = "<group>"; };
 		7831A3FA294553FF00D3D7E9 /* AbelianSemiGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbelianSemiGroup.h; sourceTree = "<group>"; };
 		7831A3FB2945547500D3D7E9 /* AbelianMonoid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbelianMonoid.h; sourceTree = "<group>"; };
+		7831A3FC2945579C00D3D7E9 /* SemiGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemiGroup.h; sourceTree = "<group>"; };
+		7831A3FD294557E900D3D7E9 /* Monoid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monoid.h; sourceTree = "<group>"; };
+		7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IntegerAbelianGroup.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,9 @@
 				7831A3FA294553FF00D3D7E9 /* AbelianSemiGroup.h */,
 				7831A3FB2945547500D3D7E9 /* AbelianMonoid.h */,
 				7831A3F52944E9E100D3D7E9 /* AbelianGroup.h */,
+				7831A3FC2945579C00D3D7E9 /* SemiGroup.h */,
+				7831A3FD294557E900D3D7E9 /* Monoid.h */,
+				7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.cpp */,
 				7831A3F62944EA1400D3D7E9 /* Integer.cpp */,
 				7831A3E3294397BB00D3D7E9 /* main.cpp */,
 			);
@@ -136,6 +143,7 @@
 			files = (
 				7831A3F82944EA1400D3D7E9 /* Integer.cpp in Sources */,
 				7831A3E4294397BB00D3D7E9 /* main.cpp in Sources */,
+				7831A3FF29455A5900D3D7E9 /* IntegerAbelianGroup.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

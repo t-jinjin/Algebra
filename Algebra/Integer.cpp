@@ -43,8 +43,8 @@ public:
     
     Integer& operator-(const AbelianGroup& rhs) override{
         const Integer& rhs_cast = static_cast<const Integer&>(rhs);
-        int res = value_ - rhs_cast.value_;
-        return *new Integer(res);
+        //int res = value_ - rhs_cast.value_;
+        return *this + (-rhs_cast);
     }
     
     Integer& zero() const override{
