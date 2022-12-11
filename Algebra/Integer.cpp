@@ -31,7 +31,7 @@ public:
         return *this;
     }
     
-    Integer& operator+(const AbelianGroup& rhs) override{
+    Integer& operator+(const AbelianSemiGroup& rhs) override{
         const Integer& rhs_cast = static_cast<const Integer&>(rhs);
         int res = value_ + rhs_cast.value_;
         return *new Integer(res);
@@ -41,7 +41,13 @@ public:
         return *new Integer(-value_);
     }
     
-    Integer& identity() const override{
+    Integer& operator-(const AbelianGroup& rhs) override{
+        const Integer& rhs_cast = static_cast<const Integer&>(rhs);
+        int res = value_ - rhs_cast.value_;
+        return *new Integer(res);
+    }
+    
+    Integer& zero() const override{
         return *new Integer(0);
     }
     
