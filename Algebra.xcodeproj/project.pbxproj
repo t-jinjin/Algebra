@@ -40,6 +40,8 @@
 		7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IntegerAbelianGroup.cpp; sourceTree = "<group>"; };
 		7831A40029456B6700D3D7E9 /* Group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
 		7831A40129456C3C00D3D7E9 /* SymmetricGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SymmetricGroup.cpp; sourceTree = "<group>"; };
+		78A689AA294CDC5600A3BA9A /* Ring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ring.h; sourceTree = "<group>"; };
+		78A689AB294CDCF400A3BA9A /* OrderedRing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderedRing.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,8 @@
 				7831A3FC2945579C00D3D7E9 /* SemiGroup.h */,
 				7831A3FD294557E900D3D7E9 /* Monoid.h */,
 				7831A40029456B6700D3D7E9 /* Group.h */,
+				78A689AA294CDC5600A3BA9A /* Ring.h */,
+				78A689AB294CDCF400A3BA9A /* OrderedRing.h */,
 				7831A40129456C3C00D3D7E9 /* SymmetricGroup.cpp */,
 				7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.cpp */,
 				7831A3F62944EA1400D3D7E9 /* Integer.cpp */,
