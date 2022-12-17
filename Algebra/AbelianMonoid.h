@@ -10,7 +10,7 @@
 
 #include "AbelianSemiGroup.h"
 
-class AbelianMonoid : public AbelianSemiGroup{
+class AbelianMonoid : virtual public AbelianSemiGroup{
 public:
     virtual const AbelianMonoid& zero() const = 0;
 };

@@ -11,7 +11,7 @@
 #include "AbelianGroup.h"
 #include "Group.h"
 
-class Ring : public AbelianGroup, Monoid{
+class Ring : public AbelianGroup,public Monoid{
 };
 
 #endif /* Header_h */

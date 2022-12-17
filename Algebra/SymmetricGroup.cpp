@@ -39,7 +39,7 @@ public:
     ~SymmetricGroup(){}
     
     bool operator==(const Set& rhs) const override{
-        const SymmetricGroup rhs_cast = static_cast<const SymmetricGroup&>(rhs);
+        const SymmetricGroup rhs_cast = dynamic_cast<const SymmetricGroup&>(rhs);
         bool flag = true;
         for (int i=0;i<n;i++){
             if (element[i] != rhs_cast.element[i]){
@@ -50,12 +50,12 @@ public:
         return flag;
     }
     bool operator!=(const Set& rhs) const override{
-        const SymmetricGroup& rhs_cast = static_cast<const SymmetricGroup&>(rhs);
+        const SymmetricGroup& rhs_cast = dynamic_cast<const SymmetricGroup&>(rhs);
         return !(*this == rhs_cast);
     }
     
     SymmetricGroup &operator=(const Set& rhs) override{
-        const SymmetricGroup& rhs_cast = static_cast<const SymmetricGroup&>(rhs);
+        const SymmetricGroup& rhs_cast = dynamic_cast<const SymmetricGroup&>(rhs);
         for (int i=0;i<n;i++){
             element[i] = rhs_cast.element[i];
         }
@@ -63,7 +63,7 @@ public:
     }
     
     SymmetricGroup& operator*(const SemiGroup& rhs) override{
-        const SymmetricGroup& rhs_cast = static_cast<const SymmetricGroup&>(rhs);
+        const SymmetricGroup& rhs_cast = dynamic_cast<const SymmetricGroup&>(rhs);
         std::array<int,n> result;
         for (int i=0; i < n; i++){
             result[i] = element[rhs_cast.element[i]];

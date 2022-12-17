@@ -10,7 +10,7 @@
 
 #include "Set.h"
 
-class OrderedSet : public Set{
+class OrderedSet : virtual public Set{
 public:
     virtual bool operator<(const OrderedSet&) const = 0;
     virtual bool operator>(const OrderedSet&) const = 0;

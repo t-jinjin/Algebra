@@ -9,7 +9,7 @@
 #define SemiGroup_h
 #include "Set.h"
 
-class SemiGroup : public Set{
+class SemiGroup : virtual public Set{
 public:
     virtual SemiGroup& operator*(const SemiGroup&) = 0;
 };

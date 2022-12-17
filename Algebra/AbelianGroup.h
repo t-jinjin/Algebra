@@ -10,7 +10,7 @@
 
 #include "AbelianMonoid.h"
 
-class AbelianGroup : public AbelianMonoid{
+class AbelianGroup : virtual public AbelianMonoid{
 public:
     virtual const AbelianGroup& operator-() const = 0;
     virtual AbelianGroup& operator-(const AbelianGroup&) = 0;

@@ -9,7 +9,7 @@
 #define Monoid_h
 #include "SemiGroup.h"
 
-class Monoid : public SemiGroup{
+class Monoid : virtual public SemiGroup{
 public:
     virtual const Monoid& one() const = 0;
 };

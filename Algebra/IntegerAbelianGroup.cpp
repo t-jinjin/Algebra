@@ -18,21 +18,21 @@ public:
     }
     
     bool operator==(const Set& rhs) const override{
-        const IntegerAbelianGroup& rhs_cast = static_cast<const IntegerAbelianGroup&>(rhs);
+        const IntegerAbelianGroup& rhs_cast = dynamic_cast<const IntegerAbelianGroup&>(rhs);
         return value_ == rhs_cast.value_;
     }
     bool operator!=(const Set& rhs) const override{
-        const IntegerAbelianGroup& rhs_cast = static_cast<const IntegerAbelianGroup&>(rhs);
+        const IntegerAbelianGroup& rhs_cast = dynamic_cast<const IntegerAbelianGroup&>(rhs);
         return !(*this == rhs_cast);
     }
     IntegerAbelianGroup &operator=(const Set& rhs) override{
-        const IntegerAbelianGroup& rhs_cast = static_cast<const IntegerAbelianGroup&>(rhs);
+        const IntegerAbelianGroup& rhs_cast = dynamic_cast<const IntegerAbelianGroup&>(rhs);
         value_ = rhs_cast.value_;
         return *this;
     }
     
     IntegerAbelianGroup& operator+(const AbelianSemiGroup& rhs) override{
-        const IntegerAbelianGroup& rhs_cast = static_cast<const IntegerAbelianGroup&>(rhs);
+        const IntegerAbelianGroup& rhs_cast = dynamic_cast<const IntegerAbelianGroup&>(rhs);
         int res = value_ + rhs_cast.value_;
         return *new IntegerAbelianGroup(res);
     }

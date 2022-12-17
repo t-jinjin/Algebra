@@ -10,7 +10,7 @@
 
 #include "Monoid.h"
 
-class Group : public Monoid{
+class Group : virtual public Monoid{
 public:
     virtual const Group& inv() const = 0;
     virtual Group& operator/(const Group&) = 0;

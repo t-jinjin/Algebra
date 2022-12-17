@@ -11,7 +11,7 @@
 #include "Ring.h"
 #include "OrderedSet.h"
 
-class OrderedRing : public Ring, OrderedSet{
+class OrderedRing : public Ring,public OrderedSet{
 public:
     virtual const OrderedRing& abs() const = 0;
 };

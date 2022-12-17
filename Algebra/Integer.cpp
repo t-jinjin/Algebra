@@ -19,11 +19,11 @@ public:
     }
     
     bool operator==(const Set& rhs) const override{
-        const Integer& rhs_cast = static_cast<const Integer&>(rhs);
+        const Integer& rhs_cast = dynamic_cast<const Integer&>(rhs);
         return value_ == rhs_cast.value_;
     }
     bool operator!=(const Set& rhs) const override{
-        const Integer& rhs_cast = static_cast<const Integer&>(rhs);
+        const Integer& rhs_cast = dynamic_cast<const Integer&>(rhs);
         return !(*this == rhs_cast);
     }
     
@@ -48,13 +48,13 @@ public:
     }
     
     Integer &operator=(const Set& rhs) override{
-        const Integer& rhs_cast = static_cast<const Integer&>(rhs);
+        const Integer& rhs_cast = dynamic_cast<const Integer&>(rhs);
         value_ = rhs_cast.value_;
         return *this;
     }
     
     Integer& operator+(const AbelianSemiGroup& rhs) override{
-        const Integer& rhs_cast = static_cast<const Integer&>(rhs);
+        const Integer& rhs_cast = dynamic_cast<const Integer&>(rhs);
         return *new Integer(value_ + rhs_cast.value_);
     }
     
@@ -68,7 +68,7 @@ public:
     }
     
     Integer& operator*(const SemiGroup& rhs) override{
-        const Integer& rhs_cast = static_cast<const Integer&>(rhs);
+        const Integer& rhs_cast = dynamic_cast<const Integer&>(rhs);
         return *new Integer(value_ * rhs_cast.value_);
     }
     
@@ -82,7 +82,7 @@ public:
     
     Integer& abs() const override{
         if (*this >= zero()){
-            return *this;
+            return zero() + *this;
         }else{
             return -(*this);
         }

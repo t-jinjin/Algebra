@@ -10,7 +10,7 @@
 
 #include "Set.h"
 
-class AbelianSemiGroup : public Set{
+class AbelianSemiGroup : virtual public Set{
 public:
     virtual AbelianSemiGroup& operator+(const AbelianSemiGroup&) = 0;
 };
