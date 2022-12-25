@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7831A3E4294397BB00D3D7E9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7831A3E3294397BB00D3D7E9 /* main.cpp */; };
-		7831A3F82944EA1400D3D7E9 /* Integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7831A3F62944EA1400D3D7E9 /* Integer.cpp */; };
-		7831A3FF29455A5900D3D7E9 /* IntegerAbelianGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.cpp */; };
-		7831A40229456C3C00D3D7E9 /* SymmetricGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7831A40129456C3C00D3D7E9 /* SymmetricGroup.cpp */; };
+		7831A3F82944EA1400D3D7E9 /* Integer.h in Sources */ = {isa = PBXBuildFile; fileRef = 7831A3F62944EA1400D3D7E9 /* Integer.h */; };
+		7831A3FF29455A5900D3D7E9 /* IntegerAbelianGroup.h in Sources */ = {isa = PBXBuildFile; fileRef = 7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.h */; };
+		7831A40229456C3C00D3D7E9 /* SymmetricGroup.h in Sources */ = {isa = PBXBuildFile; fileRef = 7831A40129456C3C00D3D7E9 /* SymmetricGroup.h */; };
+		78A689AF294E287D00A3BA9A /* RationalNumber.h in Sources */ = {isa = PBXBuildFile; fileRef = 78A689AE294E287D00A3BA9A /* RationalNumber.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,17 +32,20 @@
 		7831A3F32944C5A100D3D7E9 /* memo.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = memo.txt; path = ../memo.txt; sourceTree = "<group>"; };
 		7831A3F42944E99E00D3D7E9 /* Set.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Set.h; sourceTree = "<group>"; };
 		7831A3F52944E9E100D3D7E9 /* AbelianGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbelianGroup.h; sourceTree = "<group>"; };
-		7831A3F62944EA1400D3D7E9 /* Integer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Integer.cpp; sourceTree = "<group>"; };
+		7831A3F62944EA1400D3D7E9 /* Integer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Integer.h; sourceTree = "<group>"; };
 		7831A3F92945536C00D3D7E9 /* OrderedSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderedSet.h; sourceTree = "<group>"; };
 		7831A3FA294553FF00D3D7E9 /* AbelianSemiGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbelianSemiGroup.h; sourceTree = "<group>"; };
 		7831A3FB2945547500D3D7E9 /* AbelianMonoid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbelianMonoid.h; sourceTree = "<group>"; };
 		7831A3FC2945579C00D3D7E9 /* SemiGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SemiGroup.h; sourceTree = "<group>"; };
 		7831A3FD294557E900D3D7E9 /* Monoid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monoid.h; sourceTree = "<group>"; };
-		7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IntegerAbelianGroup.cpp; sourceTree = "<group>"; };
+		7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntegerAbelianGroup.h; sourceTree = "<group>"; };
 		7831A40029456B6700D3D7E9 /* Group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
-		7831A40129456C3C00D3D7E9 /* SymmetricGroup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SymmetricGroup.cpp; sourceTree = "<group>"; };
+		7831A40129456C3C00D3D7E9 /* SymmetricGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymmetricGroup.h; sourceTree = "<group>"; };
 		78A689AA294CDC5600A3BA9A /* Ring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ring.h; sourceTree = "<group>"; };
 		78A689AB294CDCF400A3BA9A /* OrderedRing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderedRing.h; sourceTree = "<group>"; };
+		78A689AC294E15B800A3BA9A /* Field.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Field.h; sourceTree = SOURCE_ROOT; };
+		78A689AD294E27DA00A3BA9A /* OrderedField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderedField.h; sourceTree = "<group>"; };
+		78A689AE294E287D00A3BA9A /* RationalNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RationalNumber.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +89,12 @@
 				7831A40029456B6700D3D7E9 /* Group.h */,
 				78A689AA294CDC5600A3BA9A /* Ring.h */,
 				78A689AB294CDCF400A3BA9A /* OrderedRing.h */,
-				7831A40129456C3C00D3D7E9 /* SymmetricGroup.cpp */,
-				7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.cpp */,
-				7831A3F62944EA1400D3D7E9 /* Integer.cpp */,
+				78A689AC294E15B800A3BA9A /* Field.h */,
+				78A689AD294E27DA00A3BA9A /* OrderedField.h */,
+				7831A3F62944EA1400D3D7E9 /* Integer.h */,
+				7831A40129456C3C00D3D7E9 /* SymmetricGroup.h */,
+				7831A3FE29455A5900D3D7E9 /* IntegerAbelianGroup.h */,
+				78A689AE294E287D00A3BA9A /* RationalNumber.h */,
 				7831A3E3294397BB00D3D7E9 /* main.cpp */,
 			);
 			path = Algebra;
@@ -150,10 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7831A3F82944EA1400D3D7E9 /* Integer.cpp in Sources */,
-				7831A40229456C3C00D3D7E9 /* SymmetricGroup.cpp in Sources */,
+				7831A3F82944EA1400D3D7E9 /* Integer.h in Sources */,
+				78A689AF294E287D00A3BA9A /* RationalNumber.h in Sources */,
+				7831A40229456C3C00D3D7E9 /* SymmetricGroup.h in Sources */,
 				7831A3E4294397BB00D3D7E9 /* main.cpp in Sources */,
-				7831A3FF29455A5900D3D7E9 /* IntegerAbelianGroup.cpp in Sources */,
+				7831A3FF29455A5900D3D7E9 /* IntegerAbelianGroup.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

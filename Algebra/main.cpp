@@ -6,9 +6,10 @@
 //
 
 #include <iostream>
-#include "IntegerAbelianGroup.cpp"
-#include "SymmetricGroup.cpp"
-#include "Integer.cpp"
+#include "IntegerAbelianGroup.h"
+#include "SymmetricGroup.h"
+#include "Integer.h"
+#include "RationalNumber.h"
 //#include "IntegerAbelianGroup.cpp"
 using namespace std;
 
@@ -51,13 +52,19 @@ void test_Integer(){
     cout << a - b << endl;
     cout << a * b << endl;
     cout << a + (b * a) << endl;
-    
-    
 }
+
+void test_RationalNumber(){
+    RationalNumber a(3,4);
+    RationalNumber b(5,2);
+    cout << a * b << endl;
+}
+
 
 int main(){
     //test_IntegerAbelianGroup();
     //test_SymmetricGroup();
-    test_Integer();
+    //test_Integer();
+    test_RationalNumber();
     return 0;
 }

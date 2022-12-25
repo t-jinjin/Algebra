@@ -4,6 +4,10 @@
 //
 //  Created by Takuma Jinnai on 2022/12/11.
 //
+#ifndef Integer_h
+#define Integer_h
+
+
 #include <iostream>
 #include "Set.h"
 #include "OrderedSet.h"
@@ -100,3 +104,5 @@ public:
 private:
     int value_;
 };
+
+#endif
