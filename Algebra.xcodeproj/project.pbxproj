@@ -43,9 +43,9 @@
 		7831A40129456C3C00D3D7E9 /* SymmetricGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymmetricGroup.h; sourceTree = "<group>"; };
 		78A689AA294CDC5600A3BA9A /* Ring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ring.h; sourceTree = "<group>"; };
 		78A689AB294CDCF400A3BA9A /* OrderedRing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderedRing.h; sourceTree = "<group>"; };
-		78A689AC294E15B800A3BA9A /* Field.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Field.h; sourceTree = SOURCE_ROOT; };
+		78A689AC294E15B800A3BA9A /* Field.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Field.h; path = Algebra/Field.h; sourceTree = SOURCE_ROOT; usesTabs = 0; };
 		78A689AD294E27DA00A3BA9A /* OrderedField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderedField.h; sourceTree = "<group>"; };
-		78A689AE294E287D00A3BA9A /* RationalNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RationalNumber.h; sourceTree = SOURCE_ROOT; };
+		78A689AE294E287D00A3BA9A /* RationalNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RationalNumber.h; path = Algebra/RationalNumber.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
