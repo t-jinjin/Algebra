@@ -58,6 +58,7 @@ void test_RationalNumber(){
     RationalNumber a(3,4);
     RationalNumber b(5,2);
     cout << a * b << endl;
+    cout << a / b << endl;
 }
 
 

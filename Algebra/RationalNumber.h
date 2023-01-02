@@ -83,12 +83,8 @@ public:
     }
     RationalNumber& abs() const override{
         int _p,_q;
-        if (p < 0){
-            _p = -p;
-        }
-        if (q < 0){
-            _q = -q;
-        }
+        if (p < 0) _p = -p;
+        if (q < 0) _q = -q;
         return *new RationalNumber(_p,_q);
     }
     

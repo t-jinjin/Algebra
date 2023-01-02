@@ -13,7 +13,6 @@
 
 class Field : public AbelianGroup, public Group{
     virtual const Field& inv() const = 0;
-    virtual const Field& operator/(const Field&) = 0;
 };
 
 
