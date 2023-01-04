@@ -57,9 +57,12 @@ void test_Integer(){
 void test_RationalNumber(){
     RationalNumber a(3,4);
     RationalNumber b(4,3);
+    RationalNumber c(-3,4);
     RationalNumber one(1);
-    cout << a * b << endl;
-    cout << (a * b == one) << endl;
+    cout << a + b << endl;
+    cout << a - a.inv() << endl;
+    cout << b * c << endl;
+    cout << (a + b != one) << endl;
 }
 
 
