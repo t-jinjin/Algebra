@@ -23,9 +23,17 @@ public:
         }else{
             p = _p;
             q = _q;
+            reduction();
         }
     }
+    RationalNumber(int _p){
+        p = _p;
+        q = 1;
+    }
     ~RationalNumber(){}
+    
+    
+    
     
     bool operator==(const Set& rhs) const override{
         const RationalNumber& rhs_cast = dynamic_cast<const RationalNumber&>(rhs);
@@ -83,6 +91,8 @@ public:
     }
     RationalNumber& abs() const override{
         int _p,_q;
+        _p = p;
+        _q = q;
         if (p < 0) _p = -p;
         if (q < 0) _q = -q;
         return *new RationalNumber(_p,_q);
@@ -94,15 +104,38 @@ public:
     }
     
     friend std::ostream& operator<<(std::ostream& os, const RationalNumber& rhs){
-        os << rhs.p;
-        os << " / ";
-        os << rhs.q;
-        return os;
+        switch (rhs.q) {
+            case 1:
+                os << rhs.p;
+                return os;
+            default:
+                os << rhs.p;
+                os << " / ";
+                os << rhs.q;
+                return os;
+        }
     }
     
+   
 private:
     int p;
     int q;
+    
+    void reduction(){
+        int _gcd = gcd(p,q);
+        p = p / _gcd;
+        q = q / _gcd;
+    }
+    
+    int gcd(int a,int b){
+        switch (b) {
+            case 0:
+                return a;
+            default:
+                return gcd(b, a % b);
+        }
+    }
+    
 };
 
 #endif
